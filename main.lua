@@ -14,7 +14,6 @@ skynet.start(function()
 
 	local watchdog = skynet.newservice("watchdog")
 	skynet.call(watchdog, "lua", "start", {
-		address = "127.0.0.1",
 		port = 8888,
 		maxclient = max_client,
 		nodelay = true,
